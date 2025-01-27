@@ -17,8 +17,8 @@ public class Quiz {
     questions = new ArrayList<>();
     for (String line : lines) {
       String[] parts = line.split(",");
-      List<String> answers = Arrays.stream(parts, 1, parts.length-1).collect(Collectors.toList());
-      questions.add(new Question(parts[0], answers, Integer.parseInt(parts[parts.length-1])));
+      List<String> answers = Arrays.stream(parts, 1, parts.length - 1).collect(Collectors.toList());
+      questions.add(new Question(parts[0], answers, Integer.parseInt(parts[parts.length - 1])));
     }
   }
 }
